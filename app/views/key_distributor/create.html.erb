@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Someone else's public key</h1>
+<% if @key_pair.public_key %>
+<p id="public_key"><%= @key_pair.public_key %></p>
+<% else %>
+<p>You are the first user, so there are no existing keys yet. Try again later. :/</p>
+<% end %>
+
+<h1>Your private key</h1>
+<p>Save this key; no record of it remains on the server.</p>
+<p id="private_key"><%= @key_pair.private_key %></p>
