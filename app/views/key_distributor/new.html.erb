@@ -1,3 +1,23 @@
-<h1>Generate Key Pair</h1>
+<h1>Useless Key Generator</h1>
+
+<p>For when you want half of your key-pair and half of someone else's.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">RSA key-pairs</a> have two parts:</p>
+<ul>
+  <li>A public key for encryption</li>
+  <li>A private key for decryption</li>
+</ul>
+
+<p>This app gives you mismatched pairs of freshly generated private keys plus old public keys of prior users.</p>
+
+<p>This means that if a stranger somewhere posts an encrypted message using a public key somewhere online, and you happen to see it, and you bother to attempt to decrypt it, and it happens to actually use your key, then you could read it! Neat, huh?</p>
+
+<p>Or you could be that guy who posts encrypted messages in strange places and hopes someone will actually read it, despite having no idea who the recipient might be. Heck, you won't even know if they saved the private key. Maybe no one can ever read your message! Ooo, such fun! :D</p>
+
+<p>[<a href="https://github.com/cooperra/useless-key-generator">GitHub Source</a>]</p>
+
+<h2>Generate Key Pair</h2>
+
+<p>(new private key + stranger's public key)</p>
 
 <%= render 'form' %>
